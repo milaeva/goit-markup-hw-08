@@ -1,0 +1,47 @@
+.web-button {
+  background-color: $color-accent;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border-color: transparent;
+  text-align: center;
+  min-width: 200px;
+  height: 50px;
+  color: $color-main;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.875;
+  letter-spacing: 0.06em;
+  padding: 10px;
+  cursor: pointer;
+  font-family: inherit;
+
+  .footer-form & {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+}
+
+.modal__close {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: $color-main;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  width: 30px;
+  height: 30px;
+  fill: $color-title;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: color $time-hover $cubic-for-all;
+
+  &:hover,
+  &:focus {
+    color: $color-accent;
+  }
+}

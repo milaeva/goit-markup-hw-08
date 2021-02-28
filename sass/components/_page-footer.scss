@@ -1,0 +1,48 @@
+.page-footer {
+  background-color: $color-footer;
+  padding-bottom: 60px;
+  padding-top: 60px;
+}
+.adres__item {
+  &:not(:last-child) {
+    margin-bottom: 9px;
+  }
+}
+.adres {
+  font-size: 14px;
+  line-height: 1.8;
+  font-weight: 400;
+  letter-spacing: 0.03em;
+}
+.container-adres,
+.footer-icons {
+  @media screen and (max-width: 1199px) {
+    margin-bottom: 60px;
+  }
+}
+.adres__city {
+  color: rgba(255, 255, 255, 1);
+}
+.adres__link {
+  color: rgba(255, 255, 255, 0.6);
+
+  &:focus,
+  &:hover {
+    color: $color-accent;
+  }
+}
+.accent-footer {
+  color: $color-main;
+}
+.footer-subtitle {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1, 143;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $color-main;
+  margin-bottom: 20px;
+}
+.icon-list {
+  list-style: none;
+}

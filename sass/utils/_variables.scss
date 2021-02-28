@@ -1,10 +1,11 @@
-:root {
-  --main-font: Roboto, sans-serif;
-  --logo-font: Raleway, sans-serif;
-  --main-color: #212121;
-  --secondary-color: #ffffff;
-  --accent-color: #2196f3;
-  --text-color: #757575;
-  --icon-color: #afb1b8;
-  --cubic: cubic-bezier(0.4, 0, 0.2, 1);
-}
+$color-text: #757575;
+$color-title: #212121;
+$color-accent: #2196f3;
+$color-main: #ffffff;
+$color-footer: #2f303a;
+$color-background: #f5f4fa;
+$partners-color: #afb1b8;
+$time-hover: 250ms;
+$cubic-for-all: cubic-bezier(0.4, 0, 0.2, 1);
+$main-font-family: "Roboto", sans-serif;
+$logo-font-family: "Raleway", sans-serif;
