@@ -1,0 +1,71 @@
+.potfolio-page {
+  border-top: 1px solid #f5f4fa;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.filters-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.filters-list-item:not(:last-child) {
+  margin-right: 8px;
+}
+
+.filters-list-item:nth-child(-n + 3) {
+  margin-bottom: 15px;
+}
+
+.filters {
+  margin-bottom: 40px;
+}
+
+.filters-btn {
+  display: block;
+  border-radius: 4px;
+  border: none;
+  padding: 6px 22px;
+  @include font(500, 16px, 1.625, 0.03em);
+
+  text-align: center;
+  color: var(--main-color);
+  background-color: #f5f4fa;
+
+  transition: color 250ms var(--cubic),
+    background-color 250ms var(--cubic), box-shadow 250ms var(--cubic);
+
+  &:hover,
+  &:focus {
+    color: var(--secondary-color);
+    background-color: var(--accent-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .filters-list {
+    justify-content: center;
+  }
+
+  .filters {
+    margin-bottom: 30px;
+  }
+
+  .filters-list-item:nth-child(-n + 3) {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .filters {
+    margin-bottom: 50px;
+  }
+
+  .potfolio-page {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
