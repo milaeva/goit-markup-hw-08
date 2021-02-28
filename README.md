@@ -1,1 +1,1 @@
-# goit-markup-hw-08 https://sweetlanas.github.io/goit-markup-hw-08/
+   [demo](https://github.com/milaeva/goit-markup-hw-08/index.html)
