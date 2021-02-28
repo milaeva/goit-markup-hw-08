@@ -26,15 +26,11 @@
   justify-content: center;
   align-items: center;
   border: 1px solid var(--icon-color);
-  border-radius: 4px;
-
-  width: 210px;
+  border-radius:4px;
+  width: 195px;
   height: 90px;
-
   transition: border 250ms var(--cubic);
-
-  &:hover,
-  &:focus {
+  &:hover,&:focus{
     border: 1px solid var(--accent-color);
   }
 }
