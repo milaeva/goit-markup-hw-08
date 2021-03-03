@@ -19,6 +19,11 @@
   &:focus .menu-mobile__icon {
     fill: $color-accent;
   }
+  &.is-open{
+    position: fixed;
+    top: 8px;
+    right: 15px;
+  }
 
   @media screen and (min-width: 768px) {
     display: none;
@@ -32,6 +37,7 @@
 }
 .menu-mobile.is-open .menu-mobile__close {
   display: block;
+  
 }
 .menu-mobile.is-open .menu-mobile__menu {
   display: none;
@@ -53,6 +59,7 @@
     &.is-open {
       display: flex;
       flex-direction: column;
+      height: 100vh;
     }
   }
 }
@@ -65,7 +72,7 @@
 .navigation__link {
   color: $color-title;
   font-weight: 500;
-  font-size: 40px;
+  font-size: 34px;
   line-height: 1.175;
   transition: color $time-hover $cubic-for-all;
   display: block;

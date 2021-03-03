@@ -4,21 +4,24 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Эффективные решения для вашего бизнеса</title>
+  <title>WebStudio</title>
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
     rel="stylesheet" />
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.css" />
-  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+    integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g=="
+    crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/main.min.css" />
 </head>
 
 <body>
-  <!---- Шапка страницы ----->
+  <!-- Шапка страницы -->
   <header class="page-header">
     <div class="container">
       <nav class="navigation">
         <a href="./index.html" class="logo">Web<span class="logo__themelabel">Studio</span></a>
-        <button class="menu-mobile" type="button" artia-controls="header-menu-container" aria-expanded="false"
+        <button type="button"  class="menu-mobile"  aria-expanded="false"
           data-menu-button>
+          
           <svg class="menu-mobile__icon" width="40" height="40" aria-label="Переключатель мобильного меню">
             <use class="menu-mobile__menu" href="./img/symbol-defs.svg#menu"></use>
             <use class="menu-mobile__close" href="./img/symbol-defs.svg#close"></use>
@@ -81,7 +84,7 @@
         <div class="backdrop is-hidden" data-modal>
           <div class="modal">
             <form class="modal__form">
-              <h2 class="modal__title">Оставьте свои данные, мы вам перезвоним</h2>
+              <strong class="modal__title">Оставьте свои данные, мы вам перезвоним</strong>
               <div role="group" class="wrapper">
                 <label for="name">Имя</label>
                 <input type="text" name="name" id="name" class="modal__input" />
@@ -215,12 +218,11 @@
         <ul class="advantages_list">
           <li class="advantages__item">
             <picture>
-              <source srcset="./img/IgorMobile.jpg 1x, ./img/IgorMobile2.jpg 2x" type="image"
-                media="(min-width: 480px)" />
-              <source srcset="./img/IgorTablet.jpg 1x, ./img/IgorTablet2.jpg 2x" type="image"
-                media="(min-width: 768px)" />
-              <source srcset="./img/IgorDesktop.jpg 1x, ./img/IgorDesktop2.jpg 2x" type="image"
-                media="(min-width: 1200px)" />
+              <source media="(min-width: 480px)" srcset="./img/IgorMobile.jpg 1x, ./img/IgorMobile2.jpg 2x" type="image/jpg"
+                />
+              <source  media="(min-width: 768px)" srcset="./img/IgorTablet.jpg 1x, ./img/IgorTablet2.jpg 2x" type="image/jpg" />
+              <source media="(min-width: 1200px)" srcset="./img/IgorDesktop.jpg 1x, ./img/IgorDesktop2.jpg 2x" type="image/jpg"
+            />
               <img class="advantages__images" src="./img/IgorMobile.jpg" alt="Игорь" width="450" />
             </picture>
             <div class="advantages__wrapper--icon">
@@ -397,7 +399,7 @@
       </div>
     </section>
 
-    <!------- PARTNERS       -->
+    <!--  PARTNERS  -->
     <section class="section-padding">
       <div class="container">
         <h2 class="title">Постоянные клиенты</h2>
