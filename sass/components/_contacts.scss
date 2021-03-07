@@ -1,7 +1,7 @@
 .contact__link {
   color: $color-text;
   font-weight: 500;
-  font-size: 24px;
+  font-size: 20px;
   line-height: 1.176;
   display: block;
   letter-spacing: 0.02em;
@@ -19,6 +19,8 @@
   @media screen and (min-width: 1200px) {
     font-size: 14px;
     line-height: 1.142;
+    padding-top: 32px;
+    padding-bottom: 32px;
   }
 }
 
@@ -37,8 +39,7 @@
     &:not(:last-child) {
       margin-right: 30px;
     }
-    padding-top: 32px;
-    padding-bottom: 32px;
+    
   }
 }
 .contact {
@@ -69,6 +70,6 @@
 .contact__link--accent {
   @media screen and (max-width: 767px) {
     color: $color-accent;
-    font-size: 34px;
+    font-size: 20px;
   }
 }

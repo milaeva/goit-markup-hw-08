@@ -60,6 +60,8 @@
       display: flex;
       flex-direction: column;
       height: 100vh;
+      vertical-align: middle;
+      justify-content: space-between;
     }
   }
 }
@@ -72,7 +74,7 @@
 .navigation__link {
   color: $color-title;
   font-weight: 500;
-  font-size: 34px;
+  font-size: 20px;
   line-height: 1.175;
   transition: color $time-hover $cubic-for-all;
   display: block;
@@ -90,7 +92,7 @@
   }
 }
 .navigation__list {
-  margin-bottom: 240px;
+  
   @media screen and (min-width: 768px) {
     margin-bottom: 0;
     display: flex;
@@ -101,9 +103,7 @@
 }
 .navigation__item {
   @media screen and (max-width: 767px) {
-    &:not(:last-child) {
-      margin-bottom: 32px;
-    }
+    margin-bottom: 32px;
   }
   @media screen and (min-width: 768px) {
     &:not(:last-child) {
